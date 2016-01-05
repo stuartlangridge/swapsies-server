@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/stuartlangridge/swapsies-server#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "forever": "^0.15.1"
   },
   "devDependencies": {
     "jscs": "^2.8.0",

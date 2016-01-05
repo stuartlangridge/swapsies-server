@@ -10,3 +10,12 @@ Very simple server for swapsies. A client, when it asks to pair, hits `/getcode?
 
 To enter someone else's code in order to pair with them, hit `/sendcode?code=1234&id=(uniqueid)`. This will return JSON, either `{status: "ok", identifier: "(uniqueid)"}` or `{status: "badcode"}`.
 
+## running in production
+
+We use [forever](https://github.com/foreverjs/forever).
+
+ * Start the server: `./node_modules/.bin/forever start index.js`. This will daemonise.
+ * Check the server is up:`./node_modules/.bin/forever list`.
+ * See where the logfiles are: `./node_modules/.bin/forever logs`. You can also pass `-l` to the forever start command to put the logs somewhere specific.
+ * You can also pass `stop`, `stopall`, `restart` commands to `forever`. See the documentation.
+
